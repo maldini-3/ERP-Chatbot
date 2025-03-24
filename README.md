@@ -1,10 +1,10 @@
 # RAG Chatbot with Qwen 7B Chat
 
-Overview
+# **Overview**
 
 This project is a Retrieval-Augmented Generation (RAG) chatbot powered by Qwen 7B Chat for generating accurate responses. It combines information retrieval with natural language generation to provide intelligent and context-aware answers.
 
-Features
+# **Features**
 
 Retrieval-Based Search: Uses FAISS for efficient similarity search.
 
@@ -14,7 +14,7 @@ Preprocessed Data: Works with cleaned metadata for better results.
 
 Interactive Chat Interface: Command-line chat system for querying various knowledge sources.
 
-Setup Instructions
+# **Setup Instructions**
 
 1️⃣ Install Dependencies
 
@@ -53,7 +53,7 @@ Then, start asking questions on various topics!
 👤 You: ما هي القوائم المالية؟
 🤖 Chatbot: القوائم المالية تشمل قائمة الدخل والميزانية العمومية والتدفقات النقدية.
 
-File Structure
+# **File Structure**
 
 📂 RAG_Chatbot_Qwen7B
  ├── app.py               # Main chatbot script
@@ -63,7 +63,7 @@ File Structure
  ├── data_faiss.index     # FAISS index file
  ├── README.md            # Project documentation
 
-Future Improvements
+# **Future Improvements**
 
 Deploy chatbot using Streamlit for a web-based interface.
 
@@ -71,6 +71,6 @@ Fine-tune Qwen 7B Chat for specific domains.
 
 Optimize retrieval performance with advanced embedding models.
 
-License
+# **License**
 
 This project is open-source and free to use for research and development purposes.
