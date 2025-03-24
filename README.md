@@ -1,8 +1,8 @@
-###RAG Chatbot with Qwen 7B Chat
+RAG Chatbot with Qwen 7B Chat
 
 Overview
 
-This project is a Retrieval-Augmented Generation (RAG) chatbot using Qwen 7B Chat for generating responses. It retrieves relevant ERP-related documents using FAISS and provides accurate answers based on the retrieved data.
+This project is a Retrieval-Augmented Generation (RAG) chatbot powered by Qwen 7B Chat for generating accurate responses. It combines information retrieval with natural language generation to provide intelligent and context-aware answers.
 
 Features
 
@@ -10,9 +10,9 @@ Retrieval-Based Search: Uses FAISS for efficient similarity search.
 
 Text Generation: Utilizes Qwen 7B Chat for generating natural responses.
 
-Preprocessed Data: Works with cleaned ERP metadata for better results.
+Preprocessed Data: Works with cleaned metadata for better results.
 
-Interactive Chat Interface: Command-line chat system for querying ERP knowledge.
+Interactive Chat Interface: Command-line chat system for querying various knowledge sources.
 
 Setup Instructions
 
@@ -34,11 +34,11 @@ tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
 3️⃣ Prepare the Data
 
-Ensure you have the cleaned ERP metadata and FAISS index ready:
+Ensure you have the cleaned metadata and FAISS index ready:
 
-erp_metadata.json → Contains preprocessed ERP knowledge.
+metadata.json → Contains preprocessed knowledge.
 
-erp_data_faiss.index → FAISS index for fast retrieval.
+data_faiss.index → FAISS index for fast retrieval.
 
 4️⃣ Run the Chatbot
 
@@ -46,12 +46,12 @@ Execute the chatbot script:
 
 python app.py
 
-Then, start asking questions about ERP processes!
+Then, start asking questions on various topics!
 
 5️⃣ Example Queries
 
-👤 You: كيف أجد فاتورة مبيعات؟
-🤖 ERP Chatbot: يمكنك البحث عن فواتير المبيعات عبر قائمة "المحاسبة – الفواتير" أو باستخدام رقم الفاتورة.
+👤 You: ما هي القوائم المالية؟
+🤖 Chatbot: القوائم المالية تشمل قائمة الدخل والميزانية العمومية والتدفقات النقدية.
 
 File Structure
 
@@ -59,15 +59,15 @@ File Structure
  ├── app.py               # Main chatbot script
  ├── Retrieval.py         # FAISS retrieval logic
  ├── embedding.py         # Embedding model for FAISS indexing
- ├── erp_metadata.json    # ERP-related metadata
- ├── erp_data_faiss.index # FAISS index file
+ ├── metadata.json        # Knowledge metadata
+ ├── data_faiss.index     # FAISS index file
  ├── README.md            # Project documentation
 
 Future Improvements
 
 Deploy chatbot using Streamlit for a web-based interface.
 
-Fine-tune Qwen 7B Chat for ERP-specific terminology.
+Fine-tune Qwen 7B Chat for specific domains.
 
 Optimize retrieval performance with advanced embedding models.
 
